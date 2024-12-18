@@ -17,3 +17,19 @@ que a classe do imposto teria o método de cálculo e, em seguida, passamos a cl
 * Trata-se um padrão de design comportamental que permite que você passe solicitações ao longo de uma cadeia de manipuladores. Ao receber uma solicitação, cada
 manipulador decide se processa a solicitação ou se a passa para o próximo manipulador na cadeia. Em questão do nosso código, podemos considerar a calculadora do desconto
 como uma cadeira, considerando que vamos passando de manipulador a manipulador, definindo até um último valor "Sem desconto" para decidir qual se aplica à regra do código.
+
+# Template Method
+* Consiste em um padrão de design comportamental que define o esqueleto de um algoritmo na superclasse, 
+mas permite que subclasses substituam etapas específicas do algoritmo sem alterar sua estrutura. Um exemplo
+disso são as classes Icpp e Ikcv do projeto, que extendem a classe ImpostoCom2Aliquotas, mas define em cada uma
+as regras de cada função abstrata que é implementada.
+
+# A fim de fixar, entende-se que:
+* Interfaces: Uma espécie de sinalização sobre métodos que uma classe deve implementar, assim sempre garantimos
+que as classes poderão ser utilizadas e instanciadas, sem a preopação de não ter criado um método específico. Por exemplo,
+neste projeto, a interface Imposto garante que todas as classes implementem o método calculaImposto() e se certifica sobre seus
+parâmetros e tipos de retorno.
+* Classes Abstratas:  Esta não pode ser instanciada diretamente (criar objetos a partir dela). Ela é usada como uma classe base para outras classes, 
+permitindo que você defina métodos que devem ser implementados pelas subclasses, bem como métodos que já possuem uma implementação padrão. Um exemplo disso,
+no Template Method, foi quando utilizamos a classe ImpostoCom2Aliquotas com a abstração, servindo para definir um comportamento padrão entre Ikcv e Icpp, além
+de garantir que estas criassem os próprios métodos padrão.
