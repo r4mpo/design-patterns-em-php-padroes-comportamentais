@@ -33,3 +33,8 @@ parâmetros e tipos de retorno.
 permitindo que você defina métodos que devem ser implementados pelas subclasses, bem como métodos que já possuem uma implementação padrão. Um exemplo disso,
 no Template Method, foi quando utilizamos a classe ImpostoCom2Aliquotas com a abstração, servindo para definir um comportamento padrão entre Ikcv e Icpp, além
 de garantir que estas criassem os próprios métodos padrão.
+
+# State
+* O State é um padrão de projeto comportamental que permite que um objeto altere seu comportamento quando seu estado interno muda. Parece 
+como se o objeto mudasse de classe. Um exemplo são os estados presentes na classe Orcamento, o qual definem os comportamentos de aprovado, reprovado
+e finaliza, baseado nas regras de negócio internas de cada estado.
