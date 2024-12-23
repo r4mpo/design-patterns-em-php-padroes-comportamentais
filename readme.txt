@@ -38,3 +38,7 @@ de garantir que estas criassem os próprios métodos padrão.
 * O State é um padrão de projeto comportamental que permite que um objeto altere seu comportamento quando seu estado interno muda. Parece 
 como se o objeto mudasse de classe. Um exemplo são os estados presentes na classe Orcamento, o qual definem os comportamentos de aprovado, reprovado
 e finaliza, baseado nas regras de negócio internas de cada estado.
+
+# Command
+* São os comandos dinâmicos que podemos rodar com php. É muito comum com frameworks como Laravel rodar comandos como "php artisan (...)". Assim podemos também
+separar as ordens e instruções de um comando em classes e, ao executar um arquivo, utilizar a variável $argv (que recebe dados de execuções por commands) e para prosseguir.

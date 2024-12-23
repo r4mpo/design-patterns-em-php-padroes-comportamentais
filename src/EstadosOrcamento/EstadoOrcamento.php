@@ -5,7 +5,7 @@ namespace Alura\DesignPatter\EstadosOrcamento;
 use Alura\DesignPatter\Orcamento;
 use DomainException;
 
-abstract class EstadosOrcamento
+abstract class EstadoOrcamento
 {
     abstract public function calculaDescontoExtra(Orcamento $orcamento): float;
 

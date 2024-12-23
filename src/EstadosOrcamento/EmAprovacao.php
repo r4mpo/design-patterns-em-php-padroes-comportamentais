@@ -4,7 +4,7 @@ namespace Alura\DesignPatter\EstadosOrcamento;
 
 use Alura\DesignPatter\Orcamento;
 
-class EmAprovacao extends EstadosOrcamento
+class EmAprovacao extends EstadoOrcamento
 {
     public function calculaDescontoExtra(Orcamento $orcamento): float
     {

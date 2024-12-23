@@ -3,13 +3,12 @@
 namespace Alura\DesignPatter;
 
 use Alura\DesignPatter\EstadosOrcamento\EmAprovacao;
-use Alura\DesignPatter\EstadosOrcamento\EstadosOrcamento;
-use DomainException;
+use Alura\DesignPatter\EstadosOrcamento\EstadoOrcamento;
 
 class Orcamento {
     public float $valor;
     public int $quantidadeItens;
-    public EstadosOrcamento $estado;
+    public EstadoOrcamento $estado;
 
     public function __construct() {
         $this->estado = new EmAprovacao();
