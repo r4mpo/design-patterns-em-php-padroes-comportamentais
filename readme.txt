@@ -42,3 +42,6 @@ e finaliza, baseado nas regras de negócio internas de cada estado.
 # Command
 * São os comandos dinâmicos que podemos rodar com php. É muito comum com frameworks como Laravel rodar comandos como "php artisan (...)". Assim podemos também
 separar as ordens e instruções de um comando em classes e, ao executar um arquivo, utilizar a variável $argv (que recebe dados de execuções por commands) e para prosseguir.
+
+# Observer
+* O Observer é um padrão de projeto comportamental que permite que um objeto notifique outros objetos sobre alterações em seu estado.
